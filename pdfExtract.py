@@ -92,6 +92,7 @@ patternLong = "[8][0-9]\,[0-9]+"
 
 #extract the text from pdf
 textPdf = PDF(source)
+print()
 
 freqList =patterns(patternFreq, textPdf)
 names =  patterns(patternName, textPdf)
@@ -110,7 +111,7 @@ print (nombre)
 print (ced)
 print (acuerdo)
 print (lat)
-print (long)
+print (long) 
 
 #unique values from coincidences
 cedJurTest = unique(ced).replace("N° ","")
